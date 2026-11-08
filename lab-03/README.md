@@ -11,8 +11,7 @@
 
 ## Live Link
 
-**Deployment URL:** Not applicable (local SQLite database environment; all endpoints verified and documented with Postman screenshots below).
-
+**Deployment URL: https://bdf-lab-03-b8gz.onrender.com/
 ## Objective
 
 To develop a clean, robust RESTful API by:
