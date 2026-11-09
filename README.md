@@ -22,6 +22,7 @@ This repository hosts all laboratory projects and assignments for the Backend De
 | [**`lab-01/`**](lab-01/) | **Node.js and Express Server** | Built basic HTTP server and Express server with custom routes and status codes. | Node.js, Express.js | Completed |
 | [**`lab-02/`**](lab-02/) | **SQLite Database and CRUD Routes** | Integrated SQLite database file, established asynchronous startup, and built 5 CRUD endpoints. | Express.js, SQLite3, SQLite, Nodemon | Completed |
 | [**`lab-03/`**](lab-03/) | **REST API, Query Parameters, Validation & Debugging** | Implemented search, sort, price filtering, pagination, strict input validation (400 Bad Request), and resolved backend debugging scenarios. | Express.js, SQLite3, REST Architecture | Completed |
+| [**`group-assignment/`**](group-assignment/) | **LensLab Studio — Camera Rental System** | Group LG-5 project solving double-booking conflicts with the Twist Rule (409 Conflict), JOIN endpoint, validation, and CRUD. | Express.js, SQLite3, REST API | Completed |
 
 ---
 

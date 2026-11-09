@@ -1,0 +1,29 @@
+{
+  "name": "lenslab-studio-rental-system",
+  "version": "1.0.0",
+  "description": "LensLab Studio - Camera Rental System for Group LG-5 (JP-GAI2B-G05)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "init-db": "node init-db.js",
+    "test": "node test-assignment.js"
+  },
+  "keywords": [
+    "express",
+    "sqlite3",
+    "lenslab",
+    "camera-rental",
+    "group-assignment"
+  ],
+  "author": "Group LG-5 (Mohammed Amaan, Pavan Kumar, Chandu, Rakshit)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

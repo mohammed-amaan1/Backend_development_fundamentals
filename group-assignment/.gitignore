@@ -1,0 +1,4 @@
+node_modules/
+lenslab.db
+*.log
+.env
