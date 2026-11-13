@@ -210,7 +210,9 @@ Take screenshots of the following requests in Postman to document all tasks:
 | **SS-4** | `04_join_rentals.png` | `GET http://localhost:3000/rentals` | None | Status `200 OK`, joined photographer + camera names |
 | **SS-5** | `05_twist_test1_asha.png` | `POST http://localhost:3000/rentals` | `{ "camera_id": 3, "photographer_id": 1 }` | Status `201 Created`, Asha rented Camera 3 |
 | **SS-6** | `06_twist_test2_ravi_conflict.png` | `POST http://localhost:3000/rentals` | `{ "camera_id": 3, "photographer_id": 2 }` | Status `409 Conflict`, `"Camera 3 is already rented"` |
-| **SS-7** | `07_twist_test3_return_and_rent.png`| `PUT http://localhost:3000/rentals/return/3` | None | Status `200 OK`, Camera 3 returned |
+| **SS-7** | `07_twist_test3a_return_camera.png`| `PUT http://localhost:3000/rentals/return/3` | None | Status `200 OK`, Camera 3 returned |
+| **SS-8** | `08_twist_test3b_rent_to_ravi.png` | `POST http://localhost:3000/rentals` | `{ "camera_id": 3, "photographer_id": 2 }` | Status `201 Created`, Camera 3 rented to Ravi after return |
+| **SS-9** | `09_npm_test_terminal.png` | `npm test` | None | Terminal showing all 13 test suites passing |
 
 ---
 
@@ -230,4 +232,16 @@ Take screenshots of the following requests in Postman to document all tasks:
 
 ### Screenshot 5: The Twist Test 1 - Rent Camera 3 to Asha (201 Created)
 ![Twist Test 1](screenshots/05_twist_test1_asha.png)
+
+### Screenshot 6: The Twist Test 2 - Attempt Double Booking to Ravi (409 Conflict)
+![Twist Test 2 Conflict](screenshots/06_twist_test2_ravi_conflict.png)
+
+### Screenshot 7: The Twist Test 3A - Return Camera 3 (200 OK)
+![Twist Test 3A Return Camera](screenshots/07_twist_test3a_return_camera.png)
+
+### Screenshot 8: The Twist Test 3B - Rent Camera 3 to Ravi after Return (201 Created)
+![Twist Test 3B Rent to Ravi](screenshots/08_twist_test3b_rent_to_ravi.png)
+
+### Screenshot 9: Automated Verification Suite (npm test - 13/13 Passed)
+![Automated Tests Terminal](screenshots/09_npm_test_terminal.png)
 
