@@ -211,3 +211,23 @@ Take screenshots of the following requests in Postman to document all tasks:
 | **SS-5** | `05_twist_test1_asha.png` | `POST http://localhost:3000/rentals` | `{ "camera_id": 3, "photographer_id": 1 }` | Status `201 Created`, Asha rented Camera 3 |
 | **SS-6** | `06_twist_test2_ravi_conflict.png` | `POST http://localhost:3000/rentals` | `{ "camera_id": 3, "photographer_id": 2 }` | Status `409 Conflict`, `"Camera 3 is already rented"` |
 | **SS-7** | `07_twist_test3_return_and_rent.png`| `PUT http://localhost:3000/rentals/return/3` | None | Status `200 OK`, Camera 3 returned |
+
+---
+
+## 8. Verification Screenshots
+
+### Screenshot 1: GET /cameras (All Cameras Inventory)
+![Cameras List](screenshots/01_cameras_list.png)
+
+### Screenshot 2: GET /cameras?kind=DSLR (Filter by Query Parameter)
+![Filter by DSLR](screenshots/02_query_param_dslr.png)
+
+### Screenshot 3: POST /cameras Validation Error (400 Bad Request)
+![Validation Error](screenshots/03_validation_error.png)
+
+### Screenshot 4: GET /rentals (Relational JOIN Endpoint)
+![JOIN Rentals](screenshots/04_join_rentals.png)
+
+### Screenshot 5: The Twist Test 1 - Rent Camera 3 to Asha (201 Created)
+![Twist Test 1](screenshots/05_twist_test1_asha.png)
+
